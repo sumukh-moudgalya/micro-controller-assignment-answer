@@ -12,7 +12,7 @@ void main(){
 	TR1=1;
 
 	////setting the baud rate to 4800
-	TH0=0XFA;
+	TH1=0XFA;
 
 	//sending the character H
 	SBUF='H';
