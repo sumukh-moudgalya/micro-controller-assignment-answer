@@ -2,6 +2,8 @@
 #include <reg52.h>
 
 void main(){
+	unsigned int i;
+	char db[]={'H','E','L','L','O'};
 	//Choosing mode 2 and timer 1
 	TMOD=0x20;
 
@@ -13,37 +15,16 @@ void main(){
 
 	////setting the baud rate to 4800
 	TH1=0XFA;
-
-	//sending the character H
-	SBUF='H';
-	while(!TI);
-	TI=0;
-
-	//sending the character E
-	SBUF='E';
-	while(!TI);
-	TI=0;
-
-	//sending the character L
-	SBUF='L';
-	while(!TI);
-	TI=0;
-	//sending the character L
-	SBUF='L';
-	while(!TI);
-	TI=0;
-
-	//sending the character O
-	SBUF='O';
-	while(!TI);
-	TI=0;
-
-	//stopping the com after sending hello
-	while(!RI);
-
 	
-	
+	//setting a for loop for transfer of hello
+	for(i=0;i<5;i++){
+		
+	SBUF=db[i];//moving the char db[i] to sbuf register
+		
+	while(!TI);//waiting for data transmission to be complete
+		
+	TI=0;//clearing the transmission bit for further use
+		
+	}
+
 }
-
-
-
