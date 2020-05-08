@@ -17,7 +17,7 @@ ACALL DELAY;                            CALLING DELAY OF 5ms
 SJMP LOOP1;                             REPEATING THE PROCESS FOR CONTINOUS WAVE
 
 
-DELAY:;                                 DEFINING THE SUBROUTINE DELAY
+DELAY:;                                 DEFINING THE SUBROUTINE DELAY     
 
 SETB TR0;                               CHOOSING TIMER 0
 
