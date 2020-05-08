@@ -1,5 +1,5 @@
 ORG 0000H;                      SELECTING THE ORIGIN FOR THE PROGRAM
-CLR A;                          CLEARING THE CONTEN OF A(OPTIONAL)
+CLR A;                          CLEARING THE CONTENT OF A(OPTIONAL)
 FIRST:
 MOV P0,A;                       MOVE THE CONTENTS OF A TO PORT 0
 INC A;                          INCREMENT THE VALUE OF A
