@@ -27,6 +27,8 @@ CLR TI;                                CLEAR TI
 
 INC DPTR;                              INCREMENT DPTR TO POINT IT TO NEXT DATA
 
+CLR A;                                 CLEARING THE CONTENTS OF ACCUMULATOR
+
 JMP LOOP1;                             JUMP TO LOOP1
 
 
